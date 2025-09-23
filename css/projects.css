@@ -1,0 +1,153 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: azure;
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* makes sure it's always on top */
+    width: 100%;
+    height: 90px;
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent; /* invisible by default */
+  color: #333;
+  font-weight: bold;
+}
+
+nav a.active {
+  border-bottom: 2px solid #4caf50; /* green underline */
+  color: #4caf50; /* optional: highlight color */
+}
+
+
+/* Hero Section */
+.projects-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: #fff;
+  padding: 150px;
+}
+
+.projects-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.projects-hero p {
+  font-size: 1.1rem;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Project Card */
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 1rem;
+}
+
+.project-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #4f46e5;
+}
+
+.project-content p {
+  margin-bottom: 0.5rem;
+}
+
+.project-content .tools {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn {
+  background: #4f46e5;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #4338ca;
+}
+
+.btn.secondary {
+  background: #e5e7eb;
+  color: #333;
+}
+
+.btn.secondary:hover {
+  background: #d1d5db;
+}

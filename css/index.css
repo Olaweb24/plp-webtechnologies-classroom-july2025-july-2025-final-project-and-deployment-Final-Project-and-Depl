@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2024/11/12/13/11/building-9192241_1280.jpg');
+    background-size: cover;
+    background-position: center; /* keeps it centered */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    background-color: rgba(52, 52, 109, 0.5); /* black with 50% transparency */
+    background-blend-mode: overlay;       /* blends color with image */
+}
+
+/* hidden state */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+/* visible state */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: azure;
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* makes sure it's always on top */
+    width: 100%;
+    height: 90px;
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent; /* invisible by default */
+  color: #333;
+  font-weight: bold;
+}
+
+nav a.active {
+  border-bottom: 2px solid #4caf50; /* green underline */
+  color: #4caf50; /* optional: highlight color */
+}
+
+/* --- SECTION --- */
+
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    gap : 200px;
+    padding: 50px;
+    background: linear-gradient(20deg, rgb(60, 78, 192), rgb(72, 74, 208), rgb(205, 205, 222));
+    width: 100%;
+    height: 100vh;
+}
+
+img{
+    border-radius: 50%;
+    
+}
+
+h2{
+    padding: 50px 50px 0 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    color: white;
+    line-height: 2;
+    font-weight: normal; 
+}
+
+p{
+    color: rgb(232, 232, 228); 
+    text-align: justify;
+     line-height: 1.8;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     margin-bottom: 50px;
+}
+
+span{
+    display: block;
+    font-size: 3em;
+    color: rgb(232, 232, 228); 
+    font-weight: bolder;
+    line-height: 2;
+}
+
+.btn{
+    background-color: rgb(232, 232, 228); 
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* --- SKILLS --- */
+
+.skills-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    background-color: rgb(153, 153, 213);
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.skill {
+    padding: 10px;
+
+}
+
+.skills-text{
+    flex: 1;
+}
+
+.skills-bar{
+    flex: 1;
+}
+.skill p {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.skills-text h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #5229f3;
+  font-weight: bolder;
+}
+
+.skills-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: white
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.progress {
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.progress-bar {
+  background: #4caf50;
+  height: 100%;
+  text-align: right;
+  padding-right: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* --- PROJECTS --- */
+.project-section{
+    background-color: azure;
+    height: 100vh;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.project-heading{
+    text-align: center;
+    padding: 20px;
+    color: black;
+    padding-top: 50px;
+}
+
+.project-grid{
+    gap: 1px;
+    max-width: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    height: 400px;
+    background-color: azure;
+    box-shadow: 0px 0px 10px 1px rgba(2, 2, 2, 0.2);
+    text-align: center;
+    padding: 10px;
+}
+
+.project-paragraph{
+    color: black;
+    padding: 10px;
+}
+
+.project-grid img{
+    border-radius: 10px;
+    height: 200px;
+    width: 100%;
+    
+}
+
+
+
+
+
