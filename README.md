@@ -68,11 +68,11 @@ This is a personal portfolio website designed to showcase projects, skills, and 
 ### Running Locally
 1. **Clone the repository:**
    ```sh
-   git clone <repository-url>
+   git clone <https://github.com/Olaweb24/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git>
    ```
 2. **Navigate to the project directory:**
    ```sh
-   cd <project-folder>
+   cd <plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl>
    ```
 3. **Open `index.html` in your browser:**
    - Double-click `index.html` or right-click and select "Open with" your browser.
@@ -85,22 +85,18 @@ This is a personal portfolio website designed to showcase projects, skills, and 
 ## Screenshots
 > Add screenshots of your website here for better visualization.
 
-- ![Home Page](images/profile-pic.png)
 - ![Project Example](images/Prsonal-Portfolio.JPG)
 
 ## Deployment
-You can deploy this website using any static hosting service, such as:
-- [GitHub Pages](https://pages.github.com/)
-- [Netlify](https://www.netlify.com/)
-- [Vercel](https://vercel.com/)
-- [Firebase Hosting](https://firebase.google.com/products/hosting)
+You can deploy this website using any static hosting service:
+- [GitHub Pages](https://olaweb24.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/)
 
 ### Steps for GitHub Pages
 1. Push your code to a GitHub repository.
 2. Go to the repository settings.
 3. Enable GitHub Pages from the "Pages" section.
 4. Select the branch (usually `main`) and root folder.
-5. Your site will be live at `https://<username>.github.io/<repository-name>/`.
+5. Your site will be live at `https://olaweb24.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/`.
 
 ## Contributing
 Contributions are welcome! To contribute:
@@ -115,8 +111,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 - **Developer:** Olaitan Akinkuolie
-- **Email:** [your-email@example.com]
-- **LinkedIn:** [your-linkedin-profile]
-- **GitHub:** [your-github-profile]
+- **Email:** [olaitanclem24gmail.com]
+- **GitHub:** [https://github.com/Olaweb24]
 
 Feel free to reach out for feedback, questions, or collaboration opportunities!
