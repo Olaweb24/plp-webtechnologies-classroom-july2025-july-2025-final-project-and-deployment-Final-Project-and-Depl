@@ -165,3 +165,134 @@ h3{
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
+
+
+.cta {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+  border-radius: 20px;
+  margin: 3rem auto;
+  max-width: 1000px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cta .button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.button.primary {
+  background: #fff;
+  color: #4f46e5;
+}
+
+.button.primary:hover {
+  background: #e0e7ff;
+  transform: translateY(-3px);
+}
+
+.button.secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.button.secondary:hover {
+  background: #fff;
+  color: #4f46e5;
+  transform: translateY(-3px);
+}
+
+.cta-subtext {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.cta-subtext a {
+  color: #ffeb3b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cta-subtext a:hover {
+  text-decoration: underline;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .about-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    order: 2;
+  }
+  .profile-pic {
+    order: 1;
+    margin-bottom: 20px;
+  }
+  nav ul {
+    gap: 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  img{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .about-section h3 {
+    font-size: 1.5rem;
+  }
+  .skills h2,
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+  .skill-card {
+    padding: 20px;
+  }
+}
